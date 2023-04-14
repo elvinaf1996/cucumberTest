@@ -1,5 +1,3 @@
-package org.selenide.examples.cucumber;
-
 import com.codeborne.selenide.logevents.SimpleReport;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
