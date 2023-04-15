@@ -8,16 +8,16 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPageStepsDef {
 
-    private static final By SHOPPING_BUTTON = By.xpath("//div/preceding-sibling::a[@href='/index.php/magazin']");
+    private static final By SHOPPING_LINK = By.xpath("//div/preceding-sibling::a[@href='/index.php/magazin']");
 
-    @И("^открываем страницу$")
-    public void goToShop() {
+    @И("^открыть сайт$")
+    public void openPage() {
         open("https://qahacking.guru/");
-        $(SHOPPING_BUTTON).click();
     }
 
-    @И("^переходим в магазин$")
-    public void goToHome() {
-        $(SHOPPING_BUTTON).click();
+    @И("^перейти в магазин$")
+    public void goToShopping() {
+        $(SHOPPING_LINK).click();
+        $(SHOPPING_LINK).click();
     }
 }
